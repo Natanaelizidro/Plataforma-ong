@@ -14,7 +14,7 @@ body {
     background-color: #f4f4f4;
 }
 header, footer {
-    background-color: #333;
+    background-color: #0b3d2e;
     color: #fff;
     padding: 10px 20px;
 }
@@ -69,7 +69,7 @@ input, button {
     margin-bottom: 10px;
 }
 button {
-    background-color: #333;
+    background-color: #0b3d2e;
     color: white;
     border: none;
     cursor: pointer;
@@ -77,6 +77,7 @@ button {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 section img {
     margin-bottom: 10px;
@@ -87,7 +88,7 @@ section img {
     header nav ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #0b3d2e;
         position: absolute;
         top: 60px;
         right: 0;
@@ -104,7 +105,7 @@ section img {
 </head>
 <body>
 <header>
-    <img src="https://via.placeholder.com/150x80?text=Logo+Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Anodorhynchus_hyacinthinus_-Brazil-8a.jpg" alt="Logo Instituto Arara Azul" width="120">
     <nav>
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -123,28 +124,32 @@ section img {
     <!-- Início -->
     <section id="inicio">
         <h2>Sobre o Instituto</h2>
-        <p>Missão: Ajudar comunidades carentes.<br>Visão: Um mundo mais justo.<br>Valores: Transparência, ética e solidariedade.</p>
+        <p><strong>Missão:</strong> Proteger e preservar as araras-azuis e outras aves silvestres ameaçadas de extinção, promovendo educação ambiental e conservação dos habitats naturais.</p>
+        <p><strong>Visão:</strong> Um futuro em que a biodiversidade brasileira seja respeitada e preservada para as próximas gerações.</p>
+        <p><strong>Valores:</strong> Amor à natureza, ética, transparência e sustentabilidade.</p>
         <h2>Equipe</h2>
-        <img src="https://via.placeholder.com/300x200?text=Equipe" alt="Equipe Instituto Arara Azul">
-        <p>Conheça nossa equipe dedicada de voluntários e colaboradores.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Hyacinth_Macaw_Blue_Parrot.jpg" alt="Equipe Instituto Arara Azul">
+        <p>Somos biólogos, veterinários e voluntários apaixonados pela fauna brasileira, unidos pela proteção das araras-azuis.</p>
         <h2>Contato</h2>
-        <p>Email: contato@institutoararaazul.org | Telefone: (00) 0000-0000</p>
+        <p>Email: contato@institutoararaazul.org | Telefone: (67) 3333-2222</p>
     </section>
 
     <!-- Projetos -->
     <section id="projetos">
-        <h2>Oportunidades de Voluntariado</h2>
-        <img src="https://via.placeholder.com/300x200?text=Voluntariado" alt="Voluntariado Instituto Arara Azul">
-        <p>Participe e ajude em nossos projetos sociais.</p>
+        <h2>Projetos em Destaque</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Anodorhynchus_hyacinthinus-2.jpg" alt="Projeto Arara Azul">
+        <p><strong>Projeto Arara Livre:</strong> Reabilitação e soltura de araras-azuis resgatadas do tráfico de animais.</p>
 
-        <h2>Como Doar</h2>
-        <img src="https://via.placeholder.com/300x200?text=Doacao" alt="Doação Instituto Arara Azul">
-        <p>Saiba como apoiar financeiramente nossas ações.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Hyacinth_Macaw_Brazil.jpg" alt="Educação Ambiental">
+        <p><strong>Educação Ambiental nas Escolas:</strong> Conscientização sobre a importância da fauna e do combate ao tráfico de animais silvestres.</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hyacinth_Macaw_in_flight_-Pantanal.jpg" alt="Preservação de Habitat">
+        <p><strong>Preservação do Habitat:</strong> Ações de reflorestamento e monitoramento das áreas de nidificação no Pantanal.</p>
     </section>
 
     <!-- Cadastro -->
     <section id="cadastro">
-        <h2>Cadastro de Voluntários / Doadores</h2>
+        <h2>Cadastre-se como Voluntário ou Doador</h2>
         <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
             <fieldset>
                 <legend>Informações Pessoais</legend>
@@ -152,8 +157,6 @@ section img {
                 <input type="text" id="nome" name="nome" required>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
                 <label for="dataNascimento">Data de Nascimento:</label>
@@ -161,14 +164,12 @@ section img {
             </fieldset>
             <fieldset>
                 <legend>Endereço</legend>
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" placeholder="00000-000" required>
                 <label for="cidade">Cidade:</label>
                 <input type="text" id="cidade" name="cidade" required>
                 <label for="estado">Estado:</label>
                 <input type="text" id="estado" name="estado" required>
             </fieldset>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Enviar Cadastro</button>
         </form>
     </section>
 </main>
