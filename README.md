@@ -18,14 +18,33 @@ header, footer {
     color: #fff;
     padding: 10px 20px;
 }
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 header nav ul li a {
     color: white;
     text-decoration: none;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
 }
 main {
     padding: 20px;
@@ -62,13 +81,37 @@ img {
 section img {
     margin-bottom: 10px;
 }
+
+/* ===== Menu Responsivo ===== */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+    header nav ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
 </style>
 </head>
 <body>
 <header>
     <img src="https://via.placeholder.com/150x80?text=Logo+Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
     <nav>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-links">
             <li><a href="#inicio">Início</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#cadastro">Cadastro</a></li>
@@ -102,7 +145,7 @@ section img {
     <!-- Cadastro -->
     <section id="cadastro">
         <h2>Cadastro de Voluntários / Doadores</h2>
-        <form>
+        <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
             <fieldset>
                 <legend>Informações Pessoais</legend>
                 <label for="nome">Nome Completo:</label>
@@ -137,6 +180,11 @@ section img {
 <script>
 /* ===== JS ===== */
 console.log("Projeto Instituto Arara Azul carregado");
+
+// Menu hambúrguer
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+}
 </script>
 
 </body>
