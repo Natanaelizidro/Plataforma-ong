@@ -14,7 +14,7 @@ body {
     background-color: #f4f4f4;
 }
 header, footer {
-    background-color: #333;
+    background-color: #2e6da4;
     color: #fff;
     padding: 10px 20px;
 }
@@ -69,7 +69,7 @@ input, button {
     margin-bottom: 10px;
 }
 button {
-    background-color: #333;
+    background-color: #2e6da4;
     color: white;
     border: none;
     cursor: pointer;
@@ -87,7 +87,7 @@ section img {
     header nav ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #2e6da4;
         position: absolute;
         top: 60px;
         right: 0;
@@ -103,9 +103,8 @@ section img {
 </style>
 </head>
 <body>
-
 <header>
-    <img src="https://via.placeholder.com/150x80?text=Logo+Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
+    <img src="https://via.placeholder.com/150x80?text=Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
     <nav>
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -121,30 +120,28 @@ section img {
 </header>
 
 <main>
+    <!-- Início -->
     <section id="inicio">
         <h2>Sobre o Instituto</h2>
-        <p><strong>Missão:</strong> Proteger animais silvestres, com foco especial nas araras-azuis.</p>
-        <p><strong>Visão:</strong> Um mundo mais justo e equilibrado entre o ser humano e a natureza.</p>
-        <p><strong>Valores:</strong> Transparência, ética e amor à vida.</p>
-
-        <h2>Equipe</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Anodorhynchus_hyacinthinus_-Brazil-8a.jpg" alt="Equipe Instituto Arara Azul">
-        <p>Conheça nossa equipe dedicada de biólogos, veterinários e voluntários apaixonados pela fauna brasileira.</p>
-
+        <p>O Instituto Arara Azul é uma ONG dedicada à **proteção das araras-azuis** e de outros animais silvestres em risco.  
+        Atuamos em resgates, reabilitação e reintegração ao habitat natural.</p>
+        <img src="https://via.placeholder.com/300x200?text=Araras+Azuis" alt="Araras Azuis no Pantanal">
         <h2>Contato</h2>
-        <p>Email: contato@institutoararaazul.org | Telefone: (67) 3333-2222</p>
+        <p>Email: contato@institutoararaazul.org | Telefone: (00) 0000-0000</p>
     </section>
 
+    <!-- Projetos -->
     <section id="projetos">
-        <h2>Oportunidades de Voluntariado</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hyacinth_Macaw_in_flight_-Pantanal.jpg" alt="Voluntariado Instituto Arara Azul">
-        <p>Participe de ações de resgate e monitoramento de araras-azuis no Pantanal.</p>
+        <h2>Projetos em Andamento</h2>
+        <img src="https://via.placeholder.com/300x200?text=Reabilitacao+de+Animais" alt="Reabilitação de Animais">
+        <p>Atuamos em projetos de resgate, educação ambiental e reintrodução de espécies ameaçadas.</p>
 
-        <h2>Como Doar</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Hyacinth_Macaw_Blue_Parrot.jpg" alt="Doação Instituto Arara Azul">
-        <p>Ajude com doações para manter nossos programas de proteção e reabilitação da fauna.</p>
+        <h2>Como Ajudar</h2>
+        <img src="https://via.placeholder.com/300x200?text=Doacoes+e+Voluntariado" alt="Doações e Voluntariado">
+        <p>Seja um voluntário ou faça uma doação para manter nossos projetos vivos.</p>
     </section>
 
+    <!-- Cadastro -->
     <section id="cadastro">
         <h2>Cadastro de Voluntários / Doadores</h2>
         <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
@@ -156,16 +153,6 @@ section img {
                 <input type="email" id="email" name="email" required>
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input type="date" id="dataNascimento" name="dataNascimento" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Endereço</legend>
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required>
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" required>
             </fieldset>
             <button type="submit">Cadastrar</button>
         </form>
@@ -173,14 +160,17 @@ section img {
 </main>
 
 <footer>
-    <p>&copy; 2025 Instituto Arara Azul. Todos os direitos reservados.</p>
+    <p>© 2025 Instituto Arara Azul. Todos os direitos reservados.</p>
 </footer>
 
 <script>
+/* ===== JS ===== */
+console.log("Projeto Instituto Arara Azul carregado");
+
+// Menu hambúrguer
 function toggleMenu() {
     document.getElementById('nav-links').classList.toggle('show');
 }
 </script>
-
 </body>
 </html>
