@@ -1,176 +1,148 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instituto Arara Azul</title>
-<style>
-/* ===== CSS ===== */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header, footer {
-    background-color: #2e6da4;
-    color: #fff;
-    padding: 10px 20px;
-}
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin-bottom: 5px;
-    border-radius: 2px;
-}
-main {
-    padding: 20px;
-}
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-}
-fieldset {
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-input, button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-button {
-    background-color: #2e6da4;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-section img {
-    margin-bottom: 10px;
-}
+# 🌎 Plataforma ONG — Instituto Arara Azul
 
-/* ===== Menu Responsivo ===== */
-@media (max-width: 768px) {
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #2e6da4;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-    }
-    header nav ul.show {
-        display: flex;
-    }
-    .hamburger {
-        display: flex;
-    }
-}
-</style>
-</head>
-<body>
-<header>
-    <img src="https://via.placeholder.com/150x80?text=Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul id="nav-links">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#cadastro">Cadastro</a></li>
-        </ul>
-    </nav>
-</header>
+## 🦜 Visão Geral da Plataforma
 
-<main>
-    <!-- Início -->
-    <section id="inicio">
-        <h2>Sobre o Instituto</h2>
-        <p>O Instituto Arara Azul é uma ONG dedicada à **proteção das araras-azuis** e de outros animais silvestres em risco.  
-        Atuamos em resgates, reabilitação e reintegração ao habitat natural.</p>
-        <img src="https://via.placeholder.com/300x200?text=Araras+Azuis" alt="Araras Azuis no Pantanal">
-        <h2>Contato</h2>
-        <p>Email: contato@institutoararaazul.org | Telefone: (00) 0000-0000</p>
-    </section>
+A plataforma **Instituto Arara Azul** será um sistema web completo que oferece às ONGs uma presença digital profissional e funcional.  
+O sistema contempla diferentes tipos de usuários e funcionalidades específicas para cada perfil.
 
-    <!-- Projetos -->
-    <section id="projetos">
-        <h2>Projetos em Andamento</h2>
-        <img src="https://via.placeholder.com/300x200?text=Reabilitacao+de+Animais" alt="Reabilitação de Animais">
-        <p>Atuamos em projetos de resgate, educação ambiental e reintrodução de espécies ameaçadas.</p>
+---
 
-        <h2>Como Ajudar</h2>
-        <img src="https://via.placeholder.com/300x200?text=Doacoes+e+Voluntariado" alt="Doações e Voluntariado">
-        <p>Seja um voluntário ou faça uma doação para manter nossos projetos vivos.</p>
-    </section>
+## 👥 Personas e Casos de Uso
 
-    <!-- Cadastro -->
-    <section id="cadastro">
-        <h2>Cadastro de Voluntários / Doadores</h2>
-        <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
-            <fieldset>
-                <legend>Informações Pessoais</legend>
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-            </fieldset>
-            <button type="submit">Cadastrar</button>
-        </form>
-    </section>
-</main>
+**Administrador da ONG**  
+- Gerenciamento de informações institucionais  
+- Cadastro e edição de projetos  
+- Acompanhamento de relatórios de engajamento  
+- Gerenciamento de ações e campanhas  
 
-<footer>
-    <p>© 2025 Instituto Arara Azul. Todos os direitos reservados.</p>
-</footer>
+**Voluntário**  
+- Descobrir oportunidades de voluntariado  
+- Candidatar-se a projetos  
+- Acompanhar histórico de participação  
+- Receber certificados digitais  
 
-<script>
-/* ===== JS ===== */
-console.log("Projeto Instituto Arara Azul carregado");
+**Doador/Apoiador**  
+- Conhecer projetos e seus impactos  
+- Realizar doações on-line  
+- Acompanhar aplicação de recursos  
+- Receber relatórios de transparência  
 
-// Menu hambúrguer
-function toggleMenu() {
-    document.getElementById('nav-links').classList.toggle('show');
-}
-</script>
-</body>
-</html>
+**Visitante**  
+- Conhecer a organização e seus projetos  
+- Acessar informações de contato  
+- Visualizar galeria de atividades  
+- Compartilhar conteúdo nas redes sociais  
+
+---
+
+## ⚙️ Funcionalidades Principais
+
+**Área Institucional**  
+- Página inicial com missão, visão e valores  
+- Histórico e conquistas da organização  
+- Equipe e estrutura organizacional  
+- Relatórios de transparência  
+
+**Gestão de Projetos**  
+- Cadastro detalhado de projetos sociais  
+- Galeria de fotos e vídeos  
+- Indicadores de impacto e resultados  
+- Sistema de categorização  
+
+**Engajamento de Voluntários**  
+- Portal de oportunidades de voluntariado  
+- Sistema de inscrição e seleção  
+- Área do voluntário com histórico  
+- Certificados digitais de participação  
+
+**Captação de Recursos**  
+- Campanhas de arrecadação  
+- Sistema de doações on-line  
+- Metas e progresso em tempo real  
+- Relatórios de prestação de contas  
+
+**Comunicação e Transparência**  
+- Blog com notícias e atualizações  
+- Newsletter para engajamento  
+- Área de imprensa com lançamentos  
+- Central de documentos públicos  
+
+---
+
+## 🧩 Requisitos Técnicos Gerais
+
+**Responsividade**  
+- Design *mobile-first*  
+- Compatibilidade com tablets e desktops  
+- Imagens e mídias adaptáveis  
+
+**Desempenho**  
+- Tempo de carregamento inferior a 5 segundos  
+- Otimização de imagens e recursos  
+- Minificação de CSS e JavaScript  
+
+**Acessibilidade**  
+- Conformidade com WCAG 2.1 nível AA  
+- Navegação por teclado  
+- Suporte a leitores de tela  
+- Contraste adequado de cores  
+
+**Segurança**  
+- Implementação de HTTPS  
+- Validação de formulários  
+
+**SEO e Descoberta**  
+- Meta tags otimizadas  
+- Estrutura semântica adequada  
+
+---
+
+## 🎯 Objetivos
+
+Esta primeira entrega foca na aplicação dos **fundamentos de HTML5**, estabelecendo uma base estrutural sólida para toda a plataforma.  
+Os alunos devem demonstrar domínio completo dos conceitos de **semântica, formulários e multimídia**.
+
+---
+
+## 🧱 Especificações Técnicas Obrigatórias
+
+### 🧩 Estrutura HTML5 Semântica
+- Implementar no mínimo **3 páginas HTML** com estrutura semântica completa.  
+- Aplicar níveis de títulos de forma lógica e consistente.  
+- Utilizar **imagens otimizadas** em cada página.  
+
+### 📄 Páginas Obrigatórias
+1. `index.html` — Página inicial com informações da ONG e contatos  
+2. `projetos.html` — Projetos sociais, voluntariado e como doar  
+3. `cadastro.html` — Formulário de cadastro de voluntários/doadores  
+
+### 📝 Formulários Complexos
+- Campos: Nome, E-mail, CPF, Telefone, Data de Nascimento, Endereço, CEP, Cidade e Estado  
+- Validação nativa com HTML5  
+- Agrupamento lógico com `<fieldset>` e `<legend>`  
+- Máscaras de entrada (CPF, telefone e CEP)  
+
+---
+
+## 📦 O que deve ser entregue
+
+### 1️⃣ Código Fonte Completo
+- Estrutura de pastas organizadas (`css`, `js`, `img`)  
+- Arquivos HTML validados pelo **W3C Validator**  
+
+### 2️⃣ Assets e Recursos
+- Imagens otimizadas em múltiplos formatos  
+
+### 3️⃣ Forma de Entrega
+- **Link público** do projeto no GitHub com todos os arquivos e pastas organizados  
+
+> ⚠️ Importante: o repositório **deve estar público**, caso contrário a atividade não será corrigida e a nota será zerada.
+
+---
+
+## 💙 Sobre o Instituto Arara Azul
+
+O **Instituto Arara Azul** é uma organização sem fins lucrativos dedicada à **proteção e preservação de animais silvestres**, com foco especial nas **araras-azuis**, símbolo da biodiversidade brasileira.  
+O projeto promove educação ambiental, reabilitação de espécies e incentivo ao voluntariado sustentável.
+
+---
