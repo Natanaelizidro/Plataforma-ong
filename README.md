@@ -14,7 +14,7 @@ body {
     background-color: #f4f4f4;
 }
 header, footer {
-    background-color: #0b3d2e;
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
 }
@@ -69,7 +69,7 @@ input, button {
     margin-bottom: 10px;
 }
 button {
-    background-color: #0b3d2e;
+    background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
@@ -77,7 +77,6 @@ button {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 6px;
 }
 section img {
     margin-bottom: 10px;
@@ -88,7 +87,7 @@ section img {
     header nav ul {
         display: none;
         flex-direction: column;
-        background-color: #0b3d2e;
+        background-color: #333;
         position: absolute;
         top: 60px;
         right: 0;
@@ -104,8 +103,9 @@ section img {
 </style>
 </head>
 <body>
+
 <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Anodorhynchus_hyacinthinus_-Brazil-8a.jpg" alt="Logo Instituto Arara Azul" width="120">
+    <img src="https://via.placeholder.com/150x80?text=Logo+Instituto+Arara+Azul" alt="Logo Instituto Arara Azul">
     <nav>
         <div class="hamburger" onclick="toggleMenu()">
             <span></span>
@@ -121,35 +121,32 @@ section img {
 </header>
 
 <main>
-    <!-- Início -->
     <section id="inicio">
         <h2>Sobre o Instituto</h2>
-        <p><strong>Missão:</strong> Proteger e preservar as araras-azuis e outras aves silvestres ameaçadas de extinção, promovendo educação ambiental e conservação dos habitats naturais.</p>
-        <p><strong>Visão:</strong> Um futuro em que a biodiversidade brasileira seja respeitada e preservada para as próximas gerações.</p>
-        <p><strong>Valores:</strong> Amor à natureza, ética, transparência e sustentabilidade.</p>
+        <p><strong>Missão:</strong> Proteger animais silvestres, com foco especial nas araras-azuis.</p>
+        <p><strong>Visão:</strong> Um mundo mais justo e equilibrado entre o ser humano e a natureza.</p>
+        <p><strong>Valores:</strong> Transparência, ética e amor à vida.</p>
+
         <h2>Equipe</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Hyacinth_Macaw_Blue_Parrot.jpg" alt="Equipe Instituto Arara Azul">
-        <p>Somos biólogos, veterinários e voluntários apaixonados pela fauna brasileira, unidos pela proteção das araras-azuis.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Anodorhynchus_hyacinthinus_-Brazil-8a.jpg" alt="Equipe Instituto Arara Azul">
+        <p>Conheça nossa equipe dedicada de biólogos, veterinários e voluntários apaixonados pela fauna brasileira.</p>
+
         <h2>Contato</h2>
         <p>Email: contato@institutoararaazul.org | Telefone: (67) 3333-2222</p>
     </section>
 
-    <!-- Projetos -->
     <section id="projetos">
-        <h2>Projetos em Destaque</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Anodorhynchus_hyacinthinus-2.jpg" alt="Projeto Arara Azul">
-        <p><strong>Projeto Arara Livre:</strong> Reabilitação e soltura de araras-azuis resgatadas do tráfico de animais.</p>
+        <h2>Oportunidades de Voluntariado</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hyacinth_Macaw_in_flight_-Pantanal.jpg" alt="Voluntariado Instituto Arara Azul">
+        <p>Participe de ações de resgate e monitoramento de araras-azuis no Pantanal.</p>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Hyacinth_Macaw_Brazil.jpg" alt="Educação Ambiental">
-        <p><strong>Educação Ambiental nas Escolas:</strong> Conscientização sobre a importância da fauna e do combate ao tráfico de animais silvestres.</p>
-
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hyacinth_Macaw_in_flight_-Pantanal.jpg" alt="Preservação de Habitat">
-        <p><strong>Preservação do Habitat:</strong> Ações de reflorestamento e monitoramento das áreas de nidificação no Pantanal.</p>
+        <h2>Como Doar</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Hyacinth_Macaw_Blue_Parrot.jpg" alt="Doação Instituto Arara Azul">
+        <p>Ajude com doações para manter nossos programas de proteção e reabilitação da fauna.</p>
     </section>
 
-    <!-- Cadastro -->
     <section id="cadastro">
-        <h2>Cadastre-se como Voluntário ou Doador</h2>
+        <h2>Cadastro de Voluntários / Doadores</h2>
         <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
             <fieldset>
                 <legend>Informações Pessoais</legend>
@@ -162,6 +159,7 @@ section img {
                 <label for="dataNascimento">Data de Nascimento:</label>
                 <input type="date" id="dataNascimento" name="dataNascimento" required>
             </fieldset>
+
             <fieldset>
                 <legend>Endereço</legend>
                 <label for="cidade">Cidade:</label>
@@ -169,7 +167,7 @@ section img {
                 <label for="estado">Estado:</label>
                 <input type="text" id="estado" name="estado" required>
             </fieldset>
-            <button type="submit">Enviar Cadastro</button>
+            <button type="submit">Cadastrar</button>
         </form>
     </section>
 </main>
@@ -179,10 +177,6 @@ section img {
 </footer>
 
 <script>
-/* ===== JS ===== */
-console.log("Projeto Instituto Arara Azul carregado");
-
-// Menu hambúrguer
 function toggleMenu() {
     document.getElementById('nav-links').classList.toggle('show');
 }
