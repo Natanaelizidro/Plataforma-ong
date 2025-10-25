@@ -94,51 +94,7 @@ O sistema contempla diferentes tipos de usuários e funcionalidades específicas
 **SEO e Descoberta**  
 - Meta tags otimizadas  
 - Estrutura semântica adequada  
-
----
-
-## 🎯 Objetivos
-
-Esta primeira entrega foca na aplicação dos **fundamentos de HTML5**, estabelecendo uma base estrutural sólida para toda a plataforma.  
-Os alunos devem demonstrar domínio completo dos conceitos de **semântica, formulários e multimídia**.
-
----
-
-## 🧱 Especificações Técnicas Obrigatórias
-
-### 🧩 Estrutura HTML5 Semântica
-- Implementar no mínimo **3 páginas HTML** com estrutura semântica completa.  
-- Aplicar níveis de títulos de forma lógica e consistente.  
-- Utilizar **imagens otimizadas** em cada página.  
-
-### 📄 Páginas Obrigatórias
-1. `index.html` — Página inicial com informações da ONG e contatos  
-2. `projetos.html` — Projetos sociais, voluntariado e como doar  
-3. `cadastro.html` — Formulário de cadastro de voluntários/doadores  
-
-### 📝 Formulários Complexos
-- Campos: Nome, E-mail, CPF, Telefone, Data de Nascimento, Endereço, CEP, Cidade e Estado  
-- Validação nativa com HTML5  
-- Agrupamento lógico com `<fieldset>` e `<legend>`  
-- Máscaras de entrada (CPF, telefone e CEP)  
-
----
-
-## 📦 O que deve ser entregue
-
-### 1️⃣ Código Fonte Completo
-- Estrutura de pastas organizadas (`css`, `js`, `img`)  
-- Arquivos HTML validados pelo **W3C Validator**  
-
-### 2️⃣ Assets e Recursos
-- Imagens otimizadas em múltiplos formatos  
-
-### 3️⃣ Forma de Entrega
-- **Link público** do projeto no GitHub com todos os arquivos e pastas organizados  
-
-> ⚠️ Importante: o repositório **deve estar público**, caso contrário a atividade não será corrigida e a nota será zerada.
-
----
+ 
 
 ## 💙 Sobre o Instituto Arara Azul
 
