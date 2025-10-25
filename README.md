@@ -101,4 +101,3 @@ O sistema contempla diferentes tipos de usuários e funcionalidades específicas
 O **Instituto Arara Azul** é uma organização sem fins lucrativos dedicada à **proteção e preservação de animais silvestres**, com foco especial nas **araras-azuis**, símbolo da biodiversidade brasileira.  
 O projeto promove educação ambiental, reabilitação de espécies e incentivo ao voluntariado sustentável.
 
----
